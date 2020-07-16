@@ -28,7 +28,7 @@ function woodCalculator(chair, table, bed){
 
 }
 
-var wood = woodCalculator(-1, 1, 1);
+var wood = woodCalculator(1, 1, 1);
 console.log(wood);
 
 
