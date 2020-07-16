@@ -28,11 +28,14 @@ function woodCalculator(chair, table, bed){
 
 }
 
-var wood = woodCalculator(1, 1, -1);
+var wood = woodCalculator(1, 1, 1);
 console.log(wood);
 
 
 function brickCalculator(floor){
+    if (floor < 0){
+        return "Input is not accurate."
+    }
     if (floor <= 10){
         var firstTenFloor = 15* floor;
         var result = firstTenFloor;
@@ -50,11 +53,14 @@ function brickCalculator(floor){
         
 
 }
-var numberOfBricks = brickCalculator(11);
+var numberOfBricks = brickCalculator(40);
 console.log(numberOfBricks);
 
 
 function tinyFriend(friendsName){
+    if(friendsName.length == 0){
+        return "sorry, namefiled is empty."
+    }
     var smallName = friendsName[0];
 for(var i = 0; i < friendsName.length; i++){
     var tempName = friendsName[i];
@@ -65,6 +71,6 @@ for(var i = 0; i < friendsName.length; i++){
     return smallName;    
 }
 
-var tinyName = tinyFriend(['farid', 'Nawal', 'mugdho','eva', 'irina', 'naba'])
+var tinyName = tinyFriend(['farid', 'Nawal', 'mugdho', 'eva', 'irina', 'naba'])
 console.log(tinyName);
 
