@@ -11,13 +11,13 @@ console.log(inputFeet);
 
 function woodCalculator(chair, table, bed){
     if(chair <0){
-        return "Number of chair can not be negetive"
+        return "Number of chair can not be negetive."
     }
     if(table <0){
-        return "Number of table can not be negetive"
+        return "Number of table can not be negetive."
     }
     if(bed <0){
-        return "Number of bed can not be negetive"
+        return "Number of bed can not be negetive."
     }
 
     var numberOfChair = 1 * chair;
@@ -28,7 +28,7 @@ function woodCalculator(chair, table, bed){
 
 }
 
-var wood = woodCalculator(1, 1, 1);
+var wood = woodCalculator(-1, 1, 1);
 console.log(wood);
 
 
